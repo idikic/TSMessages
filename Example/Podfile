@@ -1,12 +1,18 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+use_frameworks!
 
 target 'TSMessages', :exclusive => true do
   pod "TSMessages", :path => "../"
+  
+  # This is neccessary because there is no way to specify forked dependency inside the podspec file.
+  pod "HexColors", :git => "https://github.com/idikic/HexColors.git"
+
 end
 
 target 'Tests', :exclusive => true do
   pod "TSMessages", :path => "../"
+  pod "HexColors", :git => "https://github.com/idikic/HexColors.git"
 
   pod 'Specta', '~> 0.2.1'
   pod 'Expecta'

@@ -1,31 +1,43 @@
 PODS:
-  - Expecta (0.3.1)
-  - Expecta+Snapshots (1.3.1):
-    - Expecta
-    - FBSnapshotTestCase
-  - FBSnapshotTestCase (1.4)
-  - HexColors (2.2.1)
+  - Expecta (1.0.2)
+  - Expecta+Snapshots (2.0.0):
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0.3)
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
+  - HexColors (2.3.0)
   - Specta (0.2.1)
-  - TSMessages (0.9.12):
-    - HexColors
+  - TSMessages (0.9.13):
+    - HexColors (~> 2.3.0)
 
 DEPENDENCIES:
   - Expecta
   - Expecta+Snapshots
   - FBSnapshotTestCase
+  - HexColors (from `https://github.com/idikic/HexColors.git`)
   - Specta (~> 0.2.1)
   - TSMessages (from `../`)
 
 EXTERNAL SOURCES:
+  HexColors:
+    :git: https://github.com/idikic/HexColors.git
   TSMessages:
-    :path: ../
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  HexColors:
+    :commit: 0290c64468f568e44f0a4922e29f87fa8d6225c1
+    :git: https://github.com/idikic/HexColors.git
 
 SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
-  FBSnapshotTestCase: f9f225b5ba11c8d8c09075590490df16314e4d62
-  HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
-  TSMessages: 3e67c231abe604e5ab732050ba6dc99df4650765
+  Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
+  Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  HexColors: caa1743fbb6fd465db05452ca880424847dfa06c
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+  TSMessages: 6e403b790139636c15ab4f51946537095e03e79c
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.38.2
