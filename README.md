@@ -1,3 +1,13 @@
+!! WARNING !!
+=============
+
+This fork is created because of the **issues** with **HexColor** dependency. To be able to use TSMessage using Cocoapods, **Podfile** needs to be **edited** to manually include **path** to **forked version of HexColors**. This is needed as there is no way of changing the **source** of the **dependency** in **podspec file**. 
+
+###Podfile example
+
+	pod "HexColors", :git => "https://github.com/idikic/HexColors.git"
+
+
 TSMessages
 ==========
 
